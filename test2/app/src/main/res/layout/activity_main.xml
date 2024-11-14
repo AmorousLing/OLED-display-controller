@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingTop="650dp"
+              android:background="@drawable/background1">
+
+    <Button
+            android:id="@+id/change"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="23sp"
+            android:text="@string/Change"
+            android:textColor="#3E2723"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/remember"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/purple_200"
+            android:layout_marginStart="20dp"
+            android:text="@string/Remember"
+            android:textSize="23sp"
+            android:textColor="#3E2723"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/RGB"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@color/purple_200"
+            android:text="@string/rgb"
+            android:textSize="23sp"
+            android:textColor="#3E2723"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/connect"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/Connect"
+            android:textSize="23sp"
+            android:textColor="#3E2723" tools:ignore="VisualLintBounds,TouchTargetSizeCheck,VisualLintButtonSize"/>
+
+
+</LinearLayout>
+
+
+
+

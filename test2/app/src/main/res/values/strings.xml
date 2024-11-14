@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MQTT</string>
+    <string name="rgb">RGB灯</string>
+    <string name="Change">页面切换</string>
+    <string name="Connect">连接</string>
+    <string name="Remember">备忘录</string>
+    <string name="Overview">总览</string>
+    <string name="Weather">天气</string>
+    <string name="Temperature">温度</string>
+    <string name="Humidity">湿度</string>
+    <string name="Message">信息</string>
+    <string name="Go_off">灭</string>
+    <string name="Light_b">B</string>
+    <string name="Light_g">G</string>
+    <string name="Light_r">R</string>
+    <string name="server_ip">服务器IP</string>
+    <string name="client_id">客户端ID</string>
+    <string name="client_account">客户账号</string>
+    <string name="client_password">客户密码</string>
+    <string name="subscribe">订阅主题</string>
+    <string name="publish">发布主题</string>
+    <string name="finish">完成</string>
+    <string name="input">请输入消息</string>
+    <string name="send">发送</string>
+
+
+
+</resources>

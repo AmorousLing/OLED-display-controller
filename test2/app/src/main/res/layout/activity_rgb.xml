@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="150dp"
+              android:gravity="center_horizontal"
+              android:background="@drawable/background4">
+
+    <Button
+            android:id="@+id/go_off"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:textSize="23sp"
+            android:text="@string/Go_off"
+            android:textColor="#3E2723"
+            android:gravity="center_horizontal"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/light_b"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp"
+            android:text="@string/Light_b"
+
+            android:textColor="#2E2EB6"
+            android:gravity="center_horizontal"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/light_g"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp"
+            android:text="@string/Light_g"
+            android:textColor="#153e13"
+            android:gravity="center_horizontal"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+    <Button
+            android:id="@+id/light_r"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/purple_200"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="23sp"
+            android:text="@string/Light_r"
+            android:textColor="#3e0f18"
+            android:gravity="center_horizontal"
+            tools:ignore="VisualLintBounds,TouchTargetSizeCheck,TextSizeCheck,VisualLintButtonSize"/>
+
+</LinearLayout>
