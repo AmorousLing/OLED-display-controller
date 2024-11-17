@@ -22,7 +22,7 @@
     <string name="finish">完成</string>
     <string name="input">请输入消息</string>
     <string name="send">发送</string>
-
+    <string name="null1">" "</string>
 
 
 </resources>

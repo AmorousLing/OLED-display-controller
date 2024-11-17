@@ -2,6 +2,7 @@ package com.example.test2;
 import android.app.Activity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class ChangeActivity extends Activity {
 
