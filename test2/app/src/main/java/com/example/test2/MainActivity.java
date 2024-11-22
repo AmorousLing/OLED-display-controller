@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
                 Intent intent = null;
                 intent = new Intent(MainActivity.this,ChangeActivity.class );
                 startActivity(intent);
+
         }
         });
 
@@ -61,5 +62,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        Intent it=new Intent(this, MQTTService.class);
+        startService(it);
     }
 }

@@ -6,9 +6,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!--允许程序获取网络状态-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> `
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
+            android:name=".MyApplication"
             android:exported="true"
             android:allowBackup="true"
             android:fullBackupContent="@xml/backup_rules"
@@ -18,7 +19,8 @@
             android:icon="@drawable/background5"
             android:roundIcon="@drawable/background5round"
             android:supportsRtl="true"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar"
+    >
         <activity
                 android:name=".MainActivity"
                 android:exported="true" >
@@ -44,7 +46,18 @@
                 android:name=".RememberActivity"
                 android:exported="true" >
         </activity>
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service android:name=".MQTTService"/>
+
+
+
+
+
+
+
 
     </application>
+
+
 
 </manifest>
