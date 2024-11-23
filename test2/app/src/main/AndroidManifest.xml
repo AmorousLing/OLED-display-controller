@@ -50,12 +50,6 @@
         <service android:name=".MQTTService"/>
 
 
-
-
-
-
-
-
     </application>
 
 

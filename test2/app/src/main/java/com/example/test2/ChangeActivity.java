@@ -14,7 +14,7 @@ public class ChangeActivity extends Activity {
     private Button mweather;
     private Button mhumidity;
     private Button mmessage;
-    String content1 ="pg0";
+    private String content1 ="pg0";
     private MqttClient client;
     String pubTopic = "aaax";
     int qos = 2;

@@ -14,7 +14,7 @@ public class RGBActivity extends Activity {
     private Button mlight_b;
     private Button mlight_g;
     private Button mlight_r;
-    String content ="cl0";
+    private String content ="cl0";
     private MqttClient client;
     String pubTopic = "aaax";
     int qos = 2;

@@ -13,14 +13,12 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         // 初始化 sessionString
         try {
             client =  new MqttClient(host, ClientId, new MemoryPersistence());
         } catch (MqttException e) {
             throw new RuntimeException(e);
         }
-
     }
     // 访问 sessionString 的方法
     public static MqttClient getSessionString() {
