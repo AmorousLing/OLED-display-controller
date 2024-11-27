@@ -187,7 +187,7 @@ void OLED_Display()
 {
   // if(millis()-pagetick<5000) return;  //每5s切换一次界面
   // pagetick=millis();
-  Serial.println(color);
+  //Serial.println(color);
   if(page==0)
   {
     display.clearDisplay();

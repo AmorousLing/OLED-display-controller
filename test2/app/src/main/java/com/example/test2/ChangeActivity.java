@@ -47,7 +47,7 @@ public class ChangeActivity extends Activity {
         mweather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                content1 = "cl1";
+                content1 = "pg1";
                 MqttMessage message = new MqttMessage(content1.getBytes());
                 message.setQos(qos);
                 try {
@@ -62,7 +62,7 @@ public class ChangeActivity extends Activity {
         mtemperature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                content1 = "cl2";
+                content1 = "pg2";
                 MqttMessage message = new MqttMessage(content1.getBytes());
                 message.setQos(qos);
                 try {
@@ -77,7 +77,7 @@ public class ChangeActivity extends Activity {
         mhumidity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                content1 = "cl3";
+                content1 = "pg3";
                 MqttMessage message = new MqttMessage(content1.getBytes());
                 message.setQos(qos);
                 try {
@@ -92,7 +92,7 @@ public class ChangeActivity extends Activity {
         mmessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                content1 = "cl4";
+                content1 = "pg4";
                 MqttMessage message = new MqttMessage(content1.getBytes());
                 message.setQos(qos);
                 try {

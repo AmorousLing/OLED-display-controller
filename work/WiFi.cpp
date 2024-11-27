@@ -61,6 +61,7 @@ const char* ESP8266_sub = "espxl";                 //订阅主题（对方的发
 WiFiClient espClient;
 PubSubClient client(espClient);                      //定义客户端对象
 String data = "";
+char topicm[]="aaax";
 // static const char ca_cert[]
 // PROGMEM = R"EOF(
 // -----BEGIN CERTIFICATE-----
@@ -118,22 +119,27 @@ void connectWifi()
 // }
 void callback(char* topic, byte* payload, unsigned int length)//数据回调函数，监听数据接收
 {
-  if((char)topic[3] == 'x')
+  Serial.println(topic);
+
+  if(strcmp(topic,topicm)==0)
   {
+    Serial.println(1);
     for (int i = 0; i < length; i++)
     {
       // data += (char)payload[i]; 
       if((char)payload[i-2] == 'p' && (char)payload[i-1] == 'g')
       {
+        Serial.println(1);
         page = (uint8_t)payload[i]-48;
       }
       if((char)payload[i-2] == 'c' && (char)payload[i-1] == 'l')
       {
+        Serial.println(2);
         color = (uint8_t)payload[i]-48;
       }
     }
   }
-  if((char)topic[3] == 'm')
+  if((char)topic[3] == 'm'&&(char)topic[2]=='a'&&(char)topic[1]=='a'&&(char)topic[0]=='a')
   {
     data = "";
     for (int i = 0; i < length; i++)
@@ -167,8 +173,8 @@ void gotoMQTT()//连接MQTT服务器
       delay(2000);
     }
   }
-  client.subscribe(ESP8266_sub, 1);//添加订阅
-  client.subscribe("espmsg", 1);//添加订阅
+  client.subscribe("aaax", 1);//添加订阅
+  client.subscribe("aaam", 1);//添加订阅
 }
 void mqtt_run()
 {

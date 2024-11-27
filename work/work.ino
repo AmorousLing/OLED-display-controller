@@ -34,6 +34,7 @@ void setup()
 
 void loop()
 {
+//Serial.println(1);
   mqtt_run();
   httpRequest(reqRes);
   GetTime();

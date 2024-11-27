@@ -8,6 +8,9 @@ import android.widget.EditText;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,10 @@ public class RememberActivity extends Activity {
     private Button send;
     private LinearLayoutManager layoutManager;
     private MsgAdapter adapter;
+    private MqttClient client;
+    String pubTopic = "aaam";
+    int qos = 2;
+
 
 
     @Override
@@ -33,7 +40,7 @@ public class RememberActivity extends Activity {
         send = findViewById(R.id.Send);
         layoutManager = new LinearLayoutManager(this);
         adapter = new MsgAdapter(msgList = getData());
-
+        client = MyApplication.getSessionString();
         msgRecyclerView.setLayoutManager(layoutManager);
         msgRecyclerView.setAdapter(adapter);
 
@@ -50,6 +57,15 @@ public class RememberActivity extends Activity {
                     adapter.notifyItemInserted(msgList.size()-1);
                     msgRecyclerView.scrollToPosition(msgList.size()-1);
                     inputText.setText("");//清空输入框中的内容
+                    MqttMessage message = new MqttMessage(content.getBytes());
+                    message.setQos(qos);
+                    try {
+                        client.publish(pubTopic, message);
+                    } catch (MqttException e) {
+                        throw new RuntimeException(e);
+                    }
+                    System.out.println("Message published");
+
                 }
 //                自定义一问一答
                 if(msgList.size() == 2){
