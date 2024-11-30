@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/background6"
+                                                  >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <!-- 用户名部分 -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+        <EditText
+                android:id="@+id/usename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="@string/Please_Input_Username"
+                android:textColorHint="#8F9FA6"
+
+        />
+        <!-- 密码部分 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密 码:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+        />
+
+        <EditText
+                android:id="@+id/usepwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/Please_Input_Password"
+                android:textColorHint="#8F9FA6"
+        />
+        <!-- 确认密码部分 -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="确认密码:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+        />
+
+        <EditText
+                android:id="@+id/usepwd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/Please_Input_Password_again"
+                android:textColorHint="#8F9FA6"
+        />
+        <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Submit"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

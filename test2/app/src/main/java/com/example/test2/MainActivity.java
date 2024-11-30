@@ -2,7 +2,6 @@ package com.example.test2;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -48,7 +47,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v){
                 Intent intent = null;
-                intent = new Intent(MainActivity.this,LinkActivity.class );
+                intent = new Intent(MainActivity.this, LoginActivity.class );
                 startActivity(intent);
             }
         });

@@ -23,6 +23,15 @@
     <string name="input">请输入消息</string>
     <string name="send">发送</string>
     <string name="null1">" "</string>
+    <string name="Account">账号</string>
+    <string name="Please_Input_Account">请输入账号</string>
+    <string name="Password">密 码:</string>
+    <string name="enroll">注册</string>
+    <string name="Login">登录</string>
+    <string name="Please_Input_Password">请输入密码</string>
+    <string name="Please_Input_Password_again">请再次输入密码</string>
+    <string name="Submit">注册</string>
+    <string name="Please_Input_Username">请输入用户名</string>
 
 
 </resources>
