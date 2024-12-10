@@ -68,16 +68,16 @@ public class RememberActivity extends Activity {
 
                 }
 //                自定义一问一答
-                if(msgList.size() == 2){
-                    msgList.add(new Msg("What's your name?",Msg.TYPE_RECEIVED));
-                    adapter.notifyItemInserted(msgList.size()-1);
-                    msgRecyclerView.scrollToPosition(msgList.size()-1);
-                }
-                if(msgList.size() == 4){
-                    msgList.add(new Msg("Nice to meet you,Bye!",Msg.TYPE_RECEIVED));
-                    adapter.notifyItemInserted(msgList.size()-1);
-                    msgRecyclerView.scrollToPosition(msgList.size()-1);
-                }
+//                if(msgList.size() == 2){
+//                    msgList.add(new Msg("What's your name?",Msg.TYPE_RECEIVED));
+//                    adapter.notifyItemInserted(msgList.size()-1);
+//                    msgRecyclerView.scrollToPosition(msgList.size()-1);
+//                }
+//                if(msgList.size() == 4){
+//                    msgList.add(new Msg("Nice to meet you,Bye!",Msg.TYPE_RECEIVED));
+//                    adapter.notifyItemInserted(msgList.size()-1);
+//                    msgRecyclerView.scrollToPosition(msgList.size()-1);
+            //}
             }
         });
     }

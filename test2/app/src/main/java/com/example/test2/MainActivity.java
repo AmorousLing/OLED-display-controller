@@ -61,7 +61,6 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-        Intent it=new Intent(this, MQTTService.class);
-        startService(it);
+
     }
 }

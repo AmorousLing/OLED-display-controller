@@ -39,15 +39,19 @@ public class LoginActivity extends Activity {
                 //查询用户名和密码相同的数据
                 Cursor cursor = db.query("logins",new String[]{"usname","uspwd"}," usname=? and uspwd=?",new String[]{username,password},null,null,null);
                 int flag = cursor.getCount();                            //查询出来的记录项的条数，若没有该用户则为0条
-                if(flag!=0){                                            //若查询出的记录不为0，则进行跳转操作
+                if(flag!=0){  //若查询出的记录不为0，则进行跳转操作
+                    Intent it = new Intent(LoginActivity.this, MQTTService.class);
+                    startService(it);
                     Intent intent = new Intent();
                     intent = new Intent(LoginActivity.this,MainActivity.class );//设置页面跳转
+
                     SharedPreferences.Editor editor = sp2.edit();
                     cursor.moveToFirst();                                   //将光标移动到position为0的位置，默认位置为-1
                     String loginname = cursor.getString(0);
                     editor.putString("Loginname",loginname);
                     editor.commit();                                        //将用户名存到SharedPreferences中
                     startActivity(intent);
+
                 }
                 else{
                     Toast.makeText(LoginActivity.this,"用户名或密码错误！",Toast.LENGTH_LONG).show();             //提示用户信息错误或没有账号

@@ -44,7 +44,7 @@ public  class MQTTService extends Service {
                         System.out.println(msg.obj.toString());   // 显示MQTT数据
                         break;
                     case 31:   //连接成功
-                        Toast.makeText(getApplicationContext(), "连接成功！", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "连接成功！", Toast.LENGTH_SHORT).show();
                         try {
                             client.subscribe(mqtt_sub_topic, 1);//订阅
                         } catch (MqttException e) {
